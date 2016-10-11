@@ -1,5 +1,6 @@
 .env
 .env.*
+composer.phar
 /.idea
 /node_modules
 /public/storage

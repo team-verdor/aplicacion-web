@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/autodeploy', 'GitAutoDeploy@doPull');
+Route::post('/autodeploy', 'GitAutoDeploy@doPull');
