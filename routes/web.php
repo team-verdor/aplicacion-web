@@ -17,3 +17,5 @@ Route::get('/', function () {
 
 Route::get('/autodeploy', 'GitAutoDeploy@doPull');
 Route::post('/autodeploy', 'GitAutoDeploy@doPull');
+
+Route::get('/test', 'RaspberryTesting@printHello');
