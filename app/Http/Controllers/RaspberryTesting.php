@@ -10,7 +10,7 @@ class RaspberryTesting extends Controller
     public function printHello(Request $request)
     {
         $parameters = $request->all();
-        
-        $request->json($parameters);
+        dd($parameters);
+        //$request->json($parameters);
     }
 }
