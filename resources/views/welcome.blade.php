@@ -5,7 +5,7 @@
             <meta content="IE=edge" http-equiv="X-UA-Compatible">
                 <meta content="width=device-width, initial-scale=1" name="viewport">
                     <title>
-                        Laravel
+                        Verdor
                     </title>
                     <!-- Fonts -->
                     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
