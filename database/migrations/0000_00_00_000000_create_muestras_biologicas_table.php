@@ -1,16 +1,19 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class CreateMuestrasBiologicasTable extends Migration
 {
     public function up()
     {
         Schema::create('muestras_biologicas', function (Blueprint $table) {
-            $table->increments('id');
+            $table->engine = 'InnoDB';
             $table->timestamps();
+
+            $table->increments('id');
+            $table->integer('ordenes_muestreos_id')->unique()->unsigned(); 
         });
     }
 
