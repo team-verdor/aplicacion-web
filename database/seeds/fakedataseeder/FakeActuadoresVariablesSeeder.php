@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class fakedataseeder/FakeActuadoresVariablesSeeder extends Seeder
+class FakeActuadoresVariablesSeeder extends Seeder
 {
     public function run()
     {

@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class fakedataseeder/FakeControladoresSensoresSeeder extends Seeder
+class FakeControladoresSensoresSeeder extends Seeder
 {
     public function run()
     {

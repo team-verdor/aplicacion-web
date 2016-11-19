@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class fakedataseeder/FakeFigurasGeograficasSeeder extends Seeder
+class FakeFigurasGeograficasSeeder extends Seeder
 {
     public function run()
     {

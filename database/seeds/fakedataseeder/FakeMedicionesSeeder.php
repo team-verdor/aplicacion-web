@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class fakedataseeder/FakeMedicionesSeeder extends Seeder
+class FakeMedicionesSeeder extends Seeder
 {
     public function run()
     {
