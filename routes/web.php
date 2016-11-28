@@ -19,3 +19,6 @@ Route::get('/autodeploy', 'GitAutoDeploy@doPull');
 Route::post('/autodeploy', 'GitAutoDeploy@doPull');
 
 Route::get('/test', 'RaspberryTesting@printHello');
+Route::post('/test', 'RaspberryTesting@printHello');
+//Route::post('/comdata', 'ControladoresApi@procesar');
+Route::post('/comdata', 'ProcesadorPeticiones@procesar');
