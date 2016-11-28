@@ -10,6 +10,9 @@ Route::get('/autodeploy', 'GitAutoDeploy@doPull');
 Route::post('/autodeploy', 'GitAutoDeploy@doPull');
 
 Route::get('/test', 'RaspberryTesting@printHello');
+Route::post('/test', 'RaspberryTesting@printHello');
+//Route::post('/comdata', 'ControladoresApi@procesar');
+Route::post('/comdata', 'ProcesadorPeticiones@procesar');
 
 Route::any('/echo', function (Request $request) {
     dd($request->all());
@@ -40,6 +43,4 @@ Route::resource('administrar/muestras-biologicas', 'Admin\\MuestrasBiologicasCon
 Route::resource('administrar/categorias-taxonomicas', 'Admin\\CategoriasTaxonomicasController');
 Route::resource('administrar/taxonomias', 'Admin\\TaxonomiasController');
 Route::resource('administrar/valores-limites', 'Admin\\ValoresLimitesController');
-Route::post('/test', 'RaspberryTesting@printHello');
-//Route::post('/comdata', 'ControladoresApi@procesar');
-Route::post('/comdata', 'ProcesadorPeticiones@procesar');
+
