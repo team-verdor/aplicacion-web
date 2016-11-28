@@ -14,6 +14,9 @@ Route::post('/test', 'RaspberryTesting@printHello');
 //Route::post('/comdata', 'ControladoresApi@procesar');
 Route::post('/comdata', 'ProcesadorPeticiones@procesar');
 
+Route::get('/request','ProcesadorPeticiones@request');
+Route::get('/listener','ProcesadorPeticiones@listener');
+
 Route::any('/echo', function (Request $request) {
     dd($request->all());
 });
