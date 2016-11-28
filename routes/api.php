@@ -13,6 +13,6 @@ use Illuminate\Http\Request;
 |
  */
 
-Route::get('/foo', function () {
-   return view('welcome');
+Route::any('/echo', function (Request $request) {
+    return response()->json($request);
 });

@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class fakedataseeder/FakeAnalisisSueloSeeder extends Seeder
+class FakeAnalisisSueloSeeder extends Seeder
 {
     public function run()
     {

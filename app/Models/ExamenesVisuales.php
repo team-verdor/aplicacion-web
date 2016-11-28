@@ -6,5 +6,26 @@ use Illuminate\Database\Eloquent\Model;
 
 class ExamenesVisuales extends Model
 {
-    //
+    /**
+     * The database table used by the model.
+     *
+     * @var string
+     */
+    protected $table = 'examenes_visuales';
+
+    /**
+    * The database primary key value.
+    *
+    * @var string
+    */
+    protected $primaryKey = 'id';
+
+    /**
+     * Attributes that should be mass-assignable.
+     *
+     * @var array
+     */
+    protected $fillable = ['ordenes_muestreos_id'];
+
+    
 }

@@ -1,138 +1,29 @@
-#crear modelos con sus respectivas migraciones
-php artisan make:model Models/Actuadores -m
-php artisan make:model Models/ActuadoresVariables -m
-php artisan make:model Models/AnalisisSuelo -m
-php artisan make:model Models/CategoriasTaxonomicas -m
-php artisan make:model Models/Clientes -m
-php artisan make:model Models/Controladores -m
-php artisan make:model Models/ControladoresActuadores -m
-php artisan make:model Models/ControladoresSensores -m
-php artisan make:model Models/Cultivos -m
-php artisan make:model Models/ExamenesVisuales -m
-php artisan make:model Models/FigurasGeograficas -m
-php artisan make:model Models/Instrucciones -m
-php artisan make:model Models/Mediciones -m
-php artisan make:model Models/MuestrasAgua -m
-php artisan make:model Models/MuestrasBiologicas -m
-php artisan make:model Models/MuestrasSuelo -m
-php artisan make:model Models/OrdenesMuestreos -m
-php artisan make:model Models/Parcelas -m
-php artisan make:model Models/Personas -m
-php artisan make:model Models/Plantas -m
-php artisan make:model Models/Roles -m
-php artisan make:model Models/Sectores -m
-php artisan make:model Models/SectoresControladores -m
-php artisan make:model Models/Sensores -m
-php artisan make:model Models/SensoresVariables -m
-php artisan make:model Models/Servicios -m
-php artisan make:model Models/ServiciosParcelas -m
-php artisan make:model Models/Taxonomias -m
-php artisan make:model Models/Usuarios -m
-php artisan make:model Models/UsuariosParcelas -m
-php artisan make:model Models/ValoresLimites -m
-php artisan make:model Models/Variables -m
+#crear bd
+DROP DATABASE IF EXISTS  `verdor_database`;
+CREATE SCHEMA IF NOT EXISTS `verdor_database` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 
-#controllers
-php artisan make:controller Crud/Actuadores
-php artisan make:controller Crud/ActuadoresVariables
-php artisan make:controller Crud/AnalisisSuelo
-php artisan make:controller Crud/CategoriasTaxonomicas
-php artisan make:controller Crud/Clientes
-php artisan make:controller Crud/Controladores
-php artisan make:controller Crud/ControladoresActuadores
-php artisan make:controller Crud/ControladoresSensores
-php artisan make:controller Crud/Cultivos
-php artisan make:controller Crud/ExamenesVisuales
-php artisan make:controller Crud/FigurasGeograficas
-php artisan make:controller Crud/Instrucciones
-php artisan make:controller Crud/Mediciones
-php artisan make:controller Crud/MuestrasAgua
-php artisan make:controller Crud/MuestrasBiologicas
-php artisan make:controller Crud/MuestrasSuelo
-php artisan make:controller Crud/OrdenesMuestreos
-php artisan make:controller Crud/Parcelas
-php artisan make:controller Crud/Personas
-php artisan make:controller Crud/Plantas
-php artisan make:controller Crud/Roles
-php artisan make:controller Crud/Sectores
-php artisan make:controller Crud/SectoresControladores
-php artisan make:controller Crud/Sensores
-php artisan make:controller Crud/SensoresVariables
-php artisan make:controller Crud/Servicios
-php artisan make:controller Crud/ServiciosParcelas
-php artisan make:controller Crud/Taxonomias
-php artisan make:controller Crud/Usuarios
-php artisan make:controller Crud/UsuariosParcelas
-php artisan make:controller Crud/ValoresLimites
-php artisan make:controller Crud/Variables
-
-# seeders
-php artisan make:seeder fakedataseeder/FakeActuadoresSeeder
-php artisan make:seeder fakedataseeder/FakeActuadoresVariablesSeeder
-php artisan make:seeder fakedataseeder/FakeAnalisisSueloSeeder
-php artisan make:seeder fakedataseeder/FakeCategoriasTaxonomicasSeeder
-php artisan make:seeder fakedataseeder/FakeClientesSeeder
-php artisan make:seeder fakedataseeder/FakeControladoresActuadoresSeeder
-php artisan make:seeder fakedataseeder/FakeControladoresSeeder
-php artisan make:seeder fakedataseeder/FakeControladoresSensoresSeeder
-php artisan make:seeder fakedataseeder/FakeCultivosSeeder
-php artisan make:seeder fakedataseeder/FakeExamenesVisualesSeeder
-php artisan make:seeder fakedataseeder/FakeFigurasGeograficasSeeder
-php artisan make:seeder fakedataseeder/FakeInstruccionesSeeder
-php artisan make:seeder fakedataseeder/FakeMedicionesSeeder
-php artisan make:seeder fakedataseeder/FakeMuestrasAguaSeeder
-php artisan make:seeder fakedataseeder/FakeMuestrasBiologicasSeeder
-php artisan make:seeder fakedataseeder/FakeMuestrasSueloSeeder
-php artisan make:seeder fakedataseeder/FakeOrdenesMuestreosSeeder
-php artisan make:seeder fakedataseeder/FakeParcelasSeeder
-php artisan make:seeder fakedataseeder/FakePersonasSeeder
-php artisan make:seeder fakedataseeder/FakePlantasSeeder
-php artisan make:seeder fakedataseeder/FakeRolesSeeder
-php artisan make:seeder fakedataseeder/FakeSectoresControladoresSeeder
-php artisan make:seeder fakedataseeder/FakeSectoresSeeder
-php artisan make:seeder fakedataseeder/FakeSensoresSeeder
-php artisan make:seeder fakedataseeder/FakeSensoresVariablesSeeder
-php artisan make:seeder fakedataseeder/FakeServiciosParcelasSeeder
-php artisan make:seeder fakedataseeder/FakeServiciosSeeder
-php artisan make:seeder fakedataseeder/FakeTaxonomiasSeeder
-php artisan make:seeder fakedataseeder/FakeUsuariosParcelasSeeder
-php artisan make:seeder fakedataseeder/FakeUsuariosSeeder
-php artisan make:seeder fakedataseeder/FakeValoresLimitesSeeder
-php artisan make:seeder fakedataseeder/FakeVariablesSeeder
-
-#model test 
-php artisan make:test model_test/ActuadoresTest
-php artisan make:test model_test/ActuadoresVariablesTest
-php artisan make:test model_test/AnalisisSueloTest
-php artisan make:test model_test/CategoriasTaxonomicasTest
-php artisan make:test model_test/ClientesTest
-php artisan make:test model_test/ControladoresActuadoresTest
-php artisan make:test model_test/ControladoresSensoresTest
-php artisan make:test model_test/ControladoresTest
-php artisan make:test model_test/CultivosTest
-php artisan make:test model_test/ExamenesVisualesTest
-php artisan make:test model_test/FigurasGeograficasTest
-php artisan make:test model_test/InstruccionesTest
-php artisan make:test model_test/MedicionesTest
-php artisan make:test model_test/MuestrasAguaTest
-php artisan make:test model_test/MuestrasBiologicasTest
-php artisan make:test model_test/MuestrasSueloTest
-php artisan make:test model_test/OrdenesMuestreosTest
-php artisan make:test model_test/ParcelasTest
-php artisan make:test model_test/PersonasTest
-php artisan make:test model_test/PlantasTest
-php artisan make:test model_test/RolesTest
-php artisan make:test model_test/SectoresControladoresTest
-php artisan make:test model_test/SectoresTest
-php artisan make:test model_test/SensoresTest
-php artisan make:test model_test/SensoresVariablesTest
-php artisan make:test model_test/ServiciosParcelasTest
-php artisan make:test model_test/ServiciosTest
-php artisan make:test model_test/TaxonomiasTest
-php artisan make:test model_test/UsuariosParcelasTest
-php artisan make:test model_test/UsuariosTest
-php artisan make:test model_test/ValoresLimitesTest
-php artisan make:test model_test/VariablesTest
-
-#replace on sql script
-alter table ([a-z_]*) add constraint\s(FK_relationship_[0-9]{0,2})\sforeign key\s\(([a-z_]*)\)\s*references\s([a-z_]*)\s\([a-z_]+\) on delete restrict on update cascade;
+php artisan crud:generate FigurasGeograficas --pk=id --view-path=admin --controller-namespace=Admin --route-group=administrar --model-namespace=Models --fields="figura#text" 
+php artisan crud:generate Parcelas --pk=id --view-path=admin --controller-namespace=Admin --route-group=administrar --model-namespace=Models --fields="superficie#decimal;direccion#varchar;latitud#decimal;longitud#decimal;nombre#varchar;figuras_geograficas_id#integer" 
+php artisan crud:generate Sectores --pk=id --view-path=admin --controller-namespace=Admin --route-group=administrar --model-namespace=Models --fields="parcelas_id#integer;tipos_sectores_id#integer;figuras_geograficas_id#integer" 
+php artisan crud:generate TiposPlantas --pk=id --view-path=admin --controller-namespace=Admin --route-group=administrar --model-namespace=Models --fields="nombre#varchar" 
+php artisan crud:generate Plantas --pk=id --view-path=admin --controller-namespace=Admin --route-group=administrar --model-namespace=Models --fields="nombre_comun#varchar;nombre_cientifico#varchar;tipo_plantas_id#integer" 
+php artisan crud:generate Cultivos --pk=id --view-path=admin --controller-namespace=Admin --route-group=administrar --model-namespace=Models --fields="fecha_siembra#date;fecha_cosecha#date;sectores_id#integer;plantas_id#integer" 
+php artisan crud:generate Fabricantes --pk=id --view-path=admin --controller-namespace=Admin --route-group=administrar --model-namespace=Models --fields="nombre#varchar" 
+php artisan crud:generate Controladores --pk=id --view-path=admin --controller-namespace=Admin --route-group=administrar --model-namespace=Models --fields="serie#varchar;estado#varchar;fabricantes_id#integer" 
+php artisan crud:generate Actuadores --pk=id --view-path=admin --controller-namespace=Admin --route-group=administrar --model-namespace=Models --fields="nombre#varchar;modelo#varchar;fabricantes_id#integer" 
+php artisan crud:generate Instrucciones --pk=id --view-path=admin --controller-namespace=Admin --route-group=administrar --model-namespace=Models --fields="controladores_id#integer;actuadores_id#integer;emision#date" 
+php artisan crud:generate Sensores --pk=id --view-path=admin --controller-namespace=Admin --route-group=administrar --model-namespace=Models --fields="nombre#varchar;modelo#varchar;fabricantes_id#integer" 
+php artisan crud:generate Mediciones --pk=id --view-path=admin --controller-namespace=Admin --route-group=administrar --model-namespace=Models --fields="emision#date;valor#char;valor_numero#decimal;exponente#integer;sensores_id#integer;controladores_id#integer" 
+php artisan crud:generate Roles --pk=id --view-path=admin --controller-namespace=Admin --route-group=administrar --model-namespace=Models --fields="nombre#varchar;descripcion#varchar" 
+php artisan crud:generate OrdenesMuestreos --pk=id --view-path=admin --controller-namespace=Admin --route-group=administrar --model-namespace=Models --fields="fecha_orden#varchar;motivo#varchar;comentarios#varchar;parcelas_id#integer" 
+php artisan crud:generate MuestrasSuelo --pk=id --view-path=admin --controller-namespace=Admin --route-group=administrar --model-namespace=Models --fields="metodo_muestreo#varchar;color#varchar;textura#varchar;estructura#varchar;fecha_muestra#varchar;latitud#varchar;longitud#varchar;instrumento#varchar;profundidad#varchar;submuestras#varchar;hectareas_representa#varchar;ordenes_muestreos_id#integer" 
+php artisan crud:generate Variables --pk=id --view-path=admin --controller-namespace=Admin --route-group=administrar --model-namespace=Models --fields="nombre#varchar;descripcion#varchar;sigla#varchar;tipo#varchar;unidad_medida#varchar" 
+php artisan crud:generate Personas --pk=id --view-path=admin --controller-namespace=Admin --route-group=administrar --model-namespace=Models --fields="dni#varchar;nombres#varchar;apellido_pat#varchar;apelllido_mat#varchar;fecha_nac#date;direccion#varchar;telefono#varchar" 
+php artisan crud:generate Usuarios --pk=id --view-path=admin --controller-namespace=Admin --route-group=administrar --model-namespace=Models --fields="email#varchar;nombreusuario#varchar;contrasena#varchar;personas_id#integer" 
+php artisan crud:generate AnalisisSuelo --pk=id --view-path=admin --controller-namespace=Admin --route-group=administrar --model-namespace=Models --fields="muestras_suelo_id#integer" 
+php artisan crud:generate ExamenesVisuales --pk=id --view-path=admin --controller-namespace=Admin --route-group=administrar --model-namespace=Models --fields="ordenes_muestreos_id#integer" 
+php artisan crud:generate MuestrasAgua --pk=id --view-path=admin --controller-namespace=Admin --route-group=administrar --model-namespace=Models --fields="ordenes_muestreos_id#integer" 
+php artisan crud:generate MuestrasBiologicas --pk=id --view-path=admin --controller-namespace=Admin --route-group=administrar --model-namespace=Models --fields="ordenes_muestreos_id#integer" 
+php artisan crud:generate CategoriasTaxonomicas --pk=id --view-path=admin --controller-namespace=Admin --route-group=administrar --model-namespace=Models --fields="nombre#varchar;categoria_padre_id#integer" 
+php artisan crud:generate Taxonomias --pk=id --view-path=admin --controller-namespace=Admin --route-group=administrar --model-namespace=Models --fields="plantas_id#integer;categorias_taxonomicas_id#integer" 
+php artisan crud:generate ValoresLimites --pk=id --view-path=admin --controller-namespace=Admin --route-group=administrar --model-namespace=Models --fields="plantas_id#integer;variables_id#integer;minimo#decimal;maximo#decimal;optimo#decimal" 
