@@ -28,7 +28,7 @@ class ProcesadorPeticiones extends Controller {
             "pin" => 4,
             "valor" => 1);
         //$data = json_encode($sensor);
-        return response()->json($data);
+        return response()->json($sensor);
         //echo $data;
     }
 
